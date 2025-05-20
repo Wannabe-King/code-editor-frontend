@@ -8,9 +8,9 @@ interface HeaderProps {
 }
 
 const options: DropDownItem[] = [
-  { value: "JavaScript", label: "JavaScript" },
-  { value: "C++", label: "C++" },
   { value: "Pyhton", label: "Pyhton" },
+  { value: "C++", label: "C++" },
+  { value: "JavaScript", label: "JavaScript" },
 ];
 
 const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
