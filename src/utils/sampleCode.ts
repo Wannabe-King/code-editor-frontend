@@ -3,8 +3,8 @@ export const pythonSample = `# Online Python - IDE, Editor, Compiler, Interprete
 def sum(a, b):
     return (a + b)
 
-a = int(input('Enter 1st number: '))
-b = int(input('Enter 2nd number: '))
+a = int(input())
+b = int(input())
 
 print(f'Sum of {a} and {b} is {sum(a, b)}')
 `;
@@ -22,9 +22,9 @@ console.log(\`Sum of \${a} and \${b} is \${sum(a, b)}\`);
 `;
 
 export const createNewFile = (name: string, language: string) => {
-  if (language === 'python') {
+  if (language === "python") {
     return `# ${name}\n\n# Write your code here\n`;
-  } else if (language === 'javascript') {
+  } else if (language === "javascript") {
     return `// ${name}\n\n// Write your code here\n`;
   }
   return `// ${name}\n\n// Write your code here\n`;
