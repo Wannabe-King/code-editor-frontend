@@ -1,3 +1,5 @@
+import { sampleInput } from "../utils/sampleCode";
+
 export const InputTab = () => {
   return (
     <div className="p-2">
@@ -6,7 +8,9 @@ export const InputTab = () => {
         name="inputArea"
         id="inputArea"
         className="w-80 h-96 bg-stone-200 text-slate-900 p-3"
-      ></textarea>
+      >
+        {sampleInput}
+      </textarea>
     </div>
   );
 };

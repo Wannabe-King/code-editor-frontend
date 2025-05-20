@@ -21,6 +21,10 @@ const b = 3;
 console.log(\`Sum of \${a} and \${b} is \${sum(a, b)}\`);
 `;
 
+export const sampleInput= `1
+2
+`
+
 export const createNewFile = (name: string, language: string) => {
   if (language === "python") {
     return `# ${name}\n\n# Write your code here\n`;
