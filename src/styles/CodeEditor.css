@@ -1,0 +1,84 @@
+/* Code Editor Styles */
+.code-editor-container {
+  font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+.editor-main {
+  position: relative;
+  flex-grow: 1;
+}
+
+.line-numbers {
+  min-width: 40px;
+  padding: 0 8px;
+  font-size: 12px;
+  user-select: none;
+}
+
+.line-number {
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+}
+
+.editor-textarea {
+  line-height: 20px;
+  tab-size: 2;
+}
+
+.highlighted-code {
+  line-height: 20px;
+  tab-size: 2;
+  z-index: 1;
+}
+
+.line {
+  height: 20px;
+  white-space: pre;
+}
+
+/* Syntax highlighting */
+.string {
+  color: #ce9178;
+}
+
+.dark .string {
+  color: #ce9178;
+}
+
+.number {
+  color: #b5cea8;
+}
+
+.dark .number {
+  color: #b5cea8;
+}
+
+.comment {
+  color: #6a9955;
+}
+
+.dark .comment {
+  color: #6a9955;
+}
+
+/* Terminal styling */
+.terminal-cursor {
+  width: 2px;
+  height: 14px;
+  background-color: #333;
+}
+
+.dark .terminal-cursor {
+  background-color: #ccc;
+}
+
+/* Animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.terminal-cursor {
+  animation: blink 1s step-end infinite;
+}
